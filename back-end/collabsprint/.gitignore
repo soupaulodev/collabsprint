@@ -31,3 +31,11 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Temporary ###
+compose**
+Dockerfile**
+**-prod**
+/docs/
+*.env
+
