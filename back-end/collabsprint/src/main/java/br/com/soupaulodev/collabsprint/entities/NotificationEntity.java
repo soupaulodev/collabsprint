@@ -11,7 +11,7 @@ import java.util.UUID;
 @Data
 @Entity
 @Table(name = "notifications_tb")
-public class Notification {
+public class NotificationEntity {
 
     @Id
     private UUID id;

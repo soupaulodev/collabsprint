@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/collabsprint_dev
-    username: dev_user
-    password: dev_password
+    username: docker
+    password: docker
     hikari:
       maximum-pool-size: 5
   jpa:
@@ -29,10 +29,10 @@ spring:
             token-uri: https://oauth2.googleapis.com/token
             user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo
 
-logging:
-  level:
-    org.springframework: DEBUG
-    com.collabsprint: DEBUG
+#logging:
+#  level:
+#    org.springframework: DEBUG
+#    com.collabsprint: DEBUG
 
 server:
   port: 8080

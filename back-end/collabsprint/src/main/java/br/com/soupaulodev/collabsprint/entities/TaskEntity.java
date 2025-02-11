@@ -28,11 +28,11 @@ public class TaskEntity {
     private Date deadline;
 
     @ManyToOne
-    @Column(name = "assigned_to", nullable = false)
+    @JoinColumn(name = "assigned_to", nullable = false)
     private UserEntity assignedTo;
 
     @ManyToOne
-    @Column(name = "project_id", nullable = false)
+    @JoinColumn(name = "project_id", nullable = false)
     private ProjectEntity project;
 
     @CreationTimestamp

@@ -17,11 +17,11 @@ public class MessagesEntity {
     private UUID id;
 
     @ManyToOne
-    @Column(name = "project_id", nullable = false)
+    @JoinColumn(name = "project_id", nullable = false)
     private ProjectEntity project;
 
     @ManyToOne
-    @Column(name = "user_id", nullable = false)
+    @JoinColumn(name = "user_id", nullable = false)
     private UserEntity user;
 
     private String message;

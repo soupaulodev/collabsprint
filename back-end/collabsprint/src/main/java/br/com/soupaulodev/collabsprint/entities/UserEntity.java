@@ -41,7 +41,7 @@ public class UserEntity {
     private Map<UUID, MessagesEntity> messages = new HashMap<>();
 
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
-    private Map<UUID, Notification> notifications = new HashMap<>();
+    private Map<UUID, NotificationEntity> notifications = new HashMap<>();
 
     @CreationTimestamp
     @Column(name = "created_at", nullable = false, updatable = false)
