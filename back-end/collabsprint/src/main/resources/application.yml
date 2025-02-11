@@ -1,0 +1,6 @@
+spring:
+  application:
+    name:
+      collabsprint
+  profiles:
+    active: dev

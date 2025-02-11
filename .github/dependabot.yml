@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: "maven"
+    directory: "./backend/collabsprint"
+    schedule:
+      interval: weekly
+      day: thursday
+      time: "09:00"
+      timezone: America/Sao_Paulo
+  - package-ecosystem: "npm"
+    directory: "./front-end"
+    schedule:
+      interval: "weekly"
+      day: "thursday"
+      time: "09:00"
+      timezone: America/Sao_Paulo
